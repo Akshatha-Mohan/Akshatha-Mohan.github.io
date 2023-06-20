@@ -4,6 +4,30 @@
   font-family: Arial, sans-serif;
 } */
 
+#publications {
+  margin-bottom: 20px;
+}
+
+#publication-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.publication-item {
+  margin-bottom: 10px;
+}
+
+.publication-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.publication-details {
+  font-size: 14px;
+  color: #888;
+}
+
+
 .columns {
   display: flex;
   justify-content: space-between;

@@ -7,6 +7,9 @@ $(document).ready(function() {
   });
 });
 
+// Optional: Add more publications dynamically using JavaScript
+const publicationList = document.getElementById("publication-list");
+
 
 AOS.init({
   anchorPlacement: 'top-left',
