@@ -42,7 +42,7 @@
   cursor: pointer;
   font-size: 18px;
   color: #000000;
-  background-color: #8abee2bd;
+  background-color: #8caabe81;
   padding: 8px;
   margin-bottom: 10px;
 }
@@ -54,10 +54,35 @@
 .expandable-list {
   display: none;
   list-style-type: none;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
   padding-left: 20px;
 }
 
+.expandable-list li {
+  margin-bottom: 5px;
+}
+
+.expandable-list li:before {
+  content: "\2022"; /* Unicode for right-pointing triangle */
+  display: inline-block;
+  margin-right: 5px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.expandable-list li.collapsed:before {
+  transform: rotate(0deg);
+}
+
+.expandable-list li .expandable-content {
+  display: none;
+  margin-left: 10px;
+}
+
+.expandable-list li.expanded .expandable-content {
+  display: block;
+}
 .expandable-list li {
   margin-bottom: 5px;
 }
