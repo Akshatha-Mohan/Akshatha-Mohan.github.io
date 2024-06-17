@@ -3,6 +3,58 @@
 /* .skills {
   font-family: Arial, sans-serif;
 } */
+.skills-section {
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+}
+
+.skills-category {
+  margin-bottom: 20px;
+}
+
+.skills-category h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+  font-size: 20px; /* Adjusted font size to match "About Me" section */
+}
+
+.skills-category h4:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #3498db;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.skills-category p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  font-size: 16px; /* Adjusted font size for body text */
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skills-category {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
 
 #publications {
   margin-bottom: 20px;
