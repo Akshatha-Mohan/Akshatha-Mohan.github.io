@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshatha Mohan - Experience</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+            z-index: -1;
+            animation: gradientShift 10s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4ecdc4;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .experience-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .timeline {
+            border-left: 2px solid #4ecdc4;
+            padding-left: 20px;
+            list-style: none;
+        }
+        .timeline-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #4ecdc4;
+            border-radius: 50%;
+            position: absolute;
+            left: -27px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="animated-bg"></div>
+    
+    <header class="py-4">
+        <nav class="container mx-auto px-6">
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Home</a></li>
+                <li><a href="projects.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Projects</a></li>
+                <li><a href="#" class="nav-link text-lg hover:text-gray-300 transition duration-300">Experience</a></li>
+                <li><a href="publications.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold mb-12 gradient-text text-center">Work Experience</h1>
+        
+        <div class="timeline relative">
+            <div class="timeline-item relative mb-12">
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Machine Learning Research Assistant</h3>
+                    <p class="text-gray-400 mb-4">Texas A&M University | June 2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li class="mb-2">
+                            <strong>Thesis:</strong> Novel Pooling Layer Integration in Deep Neural Networks
+                            <ul class="list-disc list-inside ml-4 mt-2">
+                                <li>Focused on improving recognition of biological and environmental textures in images</li>
+                                <li>Created "lacunarity pooling" technique for more effective pattern capture</li>
+                                <li>Collaborating with Baylor University Dr. Sayes group to apply lacunarity for lung cell SEM images</li>
+                            </ul>
+                        </li>
+                        <li class="mb-2">
+                            <strong>Project:</strong> Quantitative Analysis of Primary Attribution Explainable AI (XAI) Methods
+                            <ul class="list-disc list-inside ml-4 mt-2">
+                                <li>Generated insights for selecting optimal XAI methods</li>
+                                <li>Published paper accepted at IEEE IGARSS 2023 conference</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Project:</strong> Data Analysis for Automated Plant Phenotyping
+                            <ul class="list-disc list-inside ml-4 mt-2">
+                                <li>Applied image processing techniques for plant phenotype measurements</li>
+                                <li>Implemented ML algorithms for automated image normalization, reducing processing time by 83%</li>
+                                <li>Optimized YOLOv8 model for image segmentation, achieving 93% IOU</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item relative mb-12">
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Android Security Software Engineer</h3>
+                    <p class="text-gray-400 mb-4">Ittiam Systems Pvt. Ltd. | September 2021 - June 2022</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Developed fuzzers for the Android Open Source Project (AOSP) using LLVM infrastructure and syzkaller</li>
+                        <li>Contributed to proactive vulnerability detection, bug identification, and memory crash detection</li>
+                        <li>Implemented static analysis rules for potential malware detection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item relative mb-12">
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Video Processing Research Intern</h3>
+                    <p class="text-gray-400 mb-4">Indian Institute of Science (IISc) | May 2021 - August 2021</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Conducted experiments on H.264 rate control methods using FFMPEG on Linux</li>
+                        <li>Analyzed latency in network and video codec using UDP transmission over Wi-Fi</li>
+                        <li>Optimized bandwidth utilization and QoS factors for constant bitrate in real-time video transmission</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item relative">
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Machine Learning Intern</h3>
+                    <p class="text-gray-400 mb-4">EngineCAL | June 2020 - August 2020</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Developed real-time object detection system on Raspberry Pi using OpenCV and MobileNet-SSD v2 algorithm</li>
+                        <li>Implemented image processing techniques including edge detection and optimal thresholding</li>
+                        <li>Contributed to safer driving experience through pedestrian detection using Histograms of Oriented Gradients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center text-gray-500">
+        <p>&copy; 2024 Akshatha Mohan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.experience-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.02) translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1) translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

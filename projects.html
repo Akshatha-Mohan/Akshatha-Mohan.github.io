@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshatha Mohan - Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+            z-index: -1;
+            animation: gradientShift 10s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4ecdc4;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .project-image {
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="animated-bg"></div>
+    
+    <header class="py-4">
+        <nav class="container mx-auto px-6">
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Home</a></li>
+                <li><a href="#" class="nav-link text-lg hover:text-gray-300 transition duration-300">Projects</a></li>
+                <li><a href="experience.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Experience</a></li>
+                <li><a href="publications.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold mb-12 gradient-text text-center">Projects</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="project-card">
+                <img src="images/aws.jpg" alt="AWS Project" class="project-image w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Intelligent PDF Query System</h3>
+                    <p class="text-gray-300 text-sm mb-4">LLM / AWS Bedrock / LangChain</p>
+                    <p class="text-gray-400">Developed an interactive tool for chatting with PDF documents using AWS Bedrock, LangChain, Amazon Titan for embedding generation and similarity search, AWS S3 for storage, AWS EC2 for deployment, and Streamlit for the front-end interface.</p>
+                    <a href="https://github.com/Akshatha-Mohan/Chat_PDF_Titant" target="_blank" class="inline-block mt-4 text-blue-400 hover:text-blue-300">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/RAG.jpg" alt="Medical Chatbot" class="project-image w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Medical Chatbot: LLM and Vector Embedding-Based Medical QA System</h3>
+                    <p class="text-gray-300 text-sm mb-4">Natural Language Processing / FastAPI / Transformers</p>
+                    <p class="text-gray-400">Engineered a FastAPI application leveraging transformer-based foundation models i.e., LLMs and Retrieval-Augmented Generation (RAG) in LangChain with SentenceTransformer embeddings and Qdrant vector database, enabling precise medical question-answering and optimized user experience.</p>
+                    <a href="https://github.com/Akshatha-Mohan/RAG-LLM_Oncology_QA_App" target="_blank" class="inline-block mt-4 text-blue-400 hover:text-blue-300">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/object_detection.png" alt="Object Detection" class="project-image w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Real-time Object Detection with MobileNet-SSD using OpenCV</h3>
+                    <p class="text-gray-300 text-sm mb-4">Numpy / OpenCV / Python</p>
+                    <p class="text-gray-400">Deployed the MobileNet-SSD v2 algorithm, trained on the COCO dataset, to detect objects in a live video feed. The project uses OpenCV to implement a pre-trained deep learning model for identifying objects and drawing bounding boxes around them in real-time.</p>
+                    <a href="https://github.com/Akshatha-Mohan/Object_Detection-MobileNet" target="_blank" class="inline-block mt-4 text-blue-400 hover:text-blue-300">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/removal_cnn.png" alt="Artistic Photo Filter Removal" class="project-image w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Artistic Photo Filter Removal Using CNNs</h3>
+                    <p class="text-gray-300 text-sm mb-4">Computational Photography / Image Restoration</p>
+                    <p class="text-gray-400">Implementation of the paper "Artistic Photo Filter Removal Using CNNs". A method to automatically restore images that have been modified with photographic filters, such as those popular on photo sharing services.</p>
+                    <a href="https://github.com/Akshatha-Mohan/Computational_Photography" target="_blank" class="inline-block mt-4 text-blue-400 hover:text-blue-300">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project-3.jpg" alt="Facial Recognition" class="project-image w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Facial Recognition using the Viola-Jones Algorithm</h3>
+                    <p class="text-gray-300 text-sm mb-4">Pattern Recognition / Python / Image Processing</p>
+                    <p class="text-gray-400">Implemented Face-detection using the AdaBoost algorithm, training a face classifier that can distinguish between face and non-face images with improved accuracy.</p>
+                    <a href="https://github.com/Akshatha-Mohan/Pattern_Recognition" target="_blank" class="inline-block mt-4 text-blue-400 hover:text-blue-300">View on GitHub <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center text-gray-500">
+        <p>&copy; 2024 Akshatha Mohan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('.project-image').style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.project-image').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

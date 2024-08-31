@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshatha Mohan - Publications</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+            z-index: -1;
+            animation: gradientShift 10s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4ecdc4;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .publication-media {
+            height: 200px; /* Default height for other images */
+            background-color: #2c2c2c;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .publication-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Default for other images */
+        }
+
+        .lacunarity-image {
+            height: auto; /* Allow the height to adjust based on content */
+            max-height: 290px; /* Adjust this value as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lacunarity-image img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        .conference-highlight {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: #ffffff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 4px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="animated-bg"></div>
+    
+    <header class="py-4">
+        <nav class="container mx-auto px-6">
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Home</a></li>
+                <li><a href="projects.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Projects</a></li>
+                <li><a href="experience.html" class="nav-link text-lg hover:text-gray-300 transition duration-300">Experience</a></li>
+                <li><a href="#" class="nav-link text-lg hover:text-gray-300 transition duration-300">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <h1 class="text-4xl font-bold mb-12 gradient-text text-center">Publications</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="publication-card">
+                <div class="publication-media" onclick="openModal(this)">
+                    <img src="images/SPIE_lungcells.png" alt="Texture Analysis Visualization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Texture Analysis of Lung Cell Morphology After Nanoparticle Exposure</h3>
+                    <p class="text-gray-400 mb-2"><strong>A. Mohan</strong>, T. Jefferis, C. Sayes, J. Peeples</p>
+                    <p class="text-gray-400 mb-4">SPIE Conference Proceedings, 2024 (Under Review)</p>
+                    <p class="text-gray-300 text-sm">Introduced a novel method for quantifying and analyzing cellular texture changes caused by nanoparticle exposure using advanced texture features.</p>
+                </div>
+            </div>
+
+
+            <div class="publication-card">
+                <div class="publication-media lacunarity-image" onclick="openModal(this)">
+                    <img src="images/lacunarity.png" alt="Lacunarity Pooling Visualization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://openaccess.thecvf.com/content/CVPR2024W/Vision4Ag/papers/Mohan_Lacunarity_Pooling_Layers_for_Plant_Image_Classification_using_Texture_Analysis_CVPRW_2024_paper.pdf" target="_blank" class="text-blue-400 hover:text-blue-300">Lacunarity Pooling Layers for Plant Image Classification using Texture Analysis</a>
+                    </h3>
+                    <p class="text-gray-400 mb-2"><strong>A. Mohan</strong> and J. Peeples</p>
+                    <p class="text-gray-400 mb-4">
+                        <span class="conference-highlight">CVPR</span>
+                        2024 IEEE/CVF Computer Vision and Pattern Recognition Vision for Agriculture Workshop (Accepted)
+                    </p>
+                    <p class="text-gray-300 text-sm">Introduced a novel pooling technique to improve plant image classification by leveraging texture information.</p>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-media" onclick="openModal(this)">
+                    <img src="images/STN.png" alt="STN-YOLO Visualization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://arxiv.org/pdf/2407.21652" target="_blank" class="text-blue-400 hover:text-blue-300">Spatial Transformer Network YOLO Model for Agricultural Object Detection</a>
+                    </h3>
+                    <p class="text-gray-400 mb-2">Y. Zambre, E. Rajkitkul, <strong>A. Mohan</strong>, J. Peeples</p>
+                    <p class="text-gray-400 mb-4">Under Review</p>
+                    <p class="text-gray-300 text-sm">Proposed an innovative integration of Spatial Transformer Networks (STNs) with the YOLO object detection model.</p>
+                </div>
+            </div>
+
+
+
+            <div class="publication-card">
+                <div class="publication-media" onclick="openModal(this)">
+                    <img src="images\xai.png" alt="XAI Visualization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://arxiv.org/abs/2306.04037" target="_blank" class="text-blue-400 hover:text-blue-300">Quantitative Analysis of Primary Attribution Explainable AI Methods for Remote Sensing Image Classification</a>
+                    </h3>
+                    <p class="text-gray-400 mb-2"><strong>A. Mohan</strong> and J. Peeples</p>
+                    <p class="text-gray-400 mb-4">
+                        <span class="conference-highlight">IEEE</span>
+                        2023 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)
+                    </p>
+                    <p class="text-gray-300 text-sm">Conducted a comprehensive analysis of XAI methods for improving interpretability in remote sensing applications.</p>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-media netlist-image" onclick="openModal(this)">
+                    <img src="images/netlist.png" alt="Netlist Generation Visualization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9760577" target="_blank" class="text-blue-400 hover:text-blue-300">Generation of Netlist from a Hand drawn Circuit through Image Processing and Machine Learning</a>
+                    </h3>
+                    <p class="text-gray-400 mb-2"><strong>Akshatha Mohan</strong>, A. Mohan, B Indushree, M Malavikaa, CP Narendra</p>
+                    <p class="text-gray-400 mb-4">
+                        <span class="conference-highlight">IEEE</span>
+                        2022 2nd International Conference on Artificial Intelligence and Signal Processing (AISP)
+                    </p>
+                    <p class="text-gray-300 text-sm">Developed an innovative approach to convert hand-drawn circuits into netlists using image processing and machine learning techniques.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center text-gray-500">
+        <p>&copy; 2024 Akshatha Mohan. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = element.querySelector('img').src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
