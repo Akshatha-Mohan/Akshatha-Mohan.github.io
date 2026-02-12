@@ -1,242 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshatha Mohan - PhD Research Profile</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600&display=swap');
-        
-        body {
-            font-family: 'Manrope', sans-serif;
-            background: radial-gradient(circle at 20% 10%, #f3f9ff 0%, #eef4ff 30%, #f8fbff 60%, #ffffff 100%);
-            color: #0f1c2e;
-            overflow-x: hidden;
-        }
-        .gradient-text {
-            background: linear-gradient(100deg, #0a3d62, #146c94, #2a9d8f);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-              radial-gradient(circle at 85% 15%, rgba(20, 108, 148, 0.18), transparent 40%),
-              radial-gradient(circle at 10% 85%, rgba(42, 157, 143, 0.12), transparent 45%);
-            z-index: -1;
-            animation: gradientShift 14s ease infinite;
-        }
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .nav-link {
-            position: relative;
-            display: inline-block;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background-color: #146c94;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-        .nav-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-        .profile-img {
-            border: 4px solid #ffffff;
-            box-shadow: 0 22px 45px rgba(12, 38, 72, 0.25);
-        }
-
-        .advisor-link {
-    position: relative;
-    color: #0a3d62;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-        .advisor-link::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #146c94;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-
-        .advisor-link:hover {
-            color: #2a9d8f;
-        }
-
-        .advisor-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-
-      .card {
-          background: rgba(255, 255, 255, 0.86);
-          border: 1px solid rgba(20, 108, 148, 0.14);
-          backdrop-filter: blur(6px);
-          border-radius: 18px;
-          transition: all 0.3s ease;
-          box-shadow: 0 14px 30px rgba(23, 42, 69, 0.09);
-      }
-      .card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 16px 30px rgba(12, 45, 71, 0.16);
-      }
-      .social-icon {
-          font-size: 1.5rem;
-          color: #0a3d62;
-          transition: color 0.3s ease;
-      }
-      .social-icon:hover {
-          color: #2a9d8f;
-      }
-      .subtitle {
-          color: #334e68;
-          max-width: 900px;
-          margin: 0 auto;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshatha Mohan | Medical AI Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/site.css" />
 </head>
-<body class="min-h-screen flex flex-col">
-    <div class="animated-bg"></div>
-    
-    <header class="py-4">
-        <nav class="container mx-auto px-6">
-            <ul class="flex justify-center space-x-8">
-                <li><a href="#" class="nav-link text-lg text-blue-900 hover:text-teal-700 transition duration-300">Home</a></li>
-                <li><a href="publications.html" class="nav-link text-lg text-blue-900 hover:text-teal-700 transition duration-300">Publications</a></li>
-                <li><a href="projects.html" class="nav-link text-lg text-blue-900 hover:text-teal-700 transition duration-300">Projects</a></li>
-                <li><a href="experience.html" class="nav-link text-lg text-blue-900 hover:text-teal-700 transition duration-300">Experience</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">Akshatha Mohan</div>
+      <nav class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="flex-grow flex items-center justify-center">
-        <div class="container mx-auto px-6 py-12 text-center">
-            <img src="images/avatar.jpg" alt="Akshatha Mohan" class="profile-img w-64 h-64 rounded-full mx-auto mb-8 object-cover">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text" style="font-family: 'Fraunces', serif;">Akshatha Mohan</h1>
-            <p class="text-xl mb-4 subtitle">Graduate Research Assistant at Washington University in St. Louis (WashU Medicine) with a research focus on medical AI and computational imaging. M.S. in Computer Engineering, Texas A&amp;M University.</p>
-            
-            <!-- Social Media Links -->
-            <div class="flex justify-center space-x-6 mb-8">
-                <a href="https://scholar.google.com/citations?user=GF29N0wAAAAJ&hl=en" target="_blank" class="social-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/akshatha-mohan-495972188/" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            
-            <div class="flex justify-center space-x-4 mb-12">
-                <a href="Akshatha_Mohan_PhD_applicant.pdf" target="_blank" class="bg-gradient-to-r from-cyan-700 to-teal-600 text-white px-6 py-2 rounded-full hover:from-teal-600 hover:to-cyan-700 transition duration-300">View Resume</a>
-                <div id="contactModal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-                    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                      <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                        <div class="sm:flex sm:items-start">
-                          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
-                              Contact Information
-                            </h3>
-                            <div class="mt-2">
-                              <p class="text-sm text-gray-500">
-                                Email: <a href="mailto:akshatha.mohan@tamu.edu" class="text-blue-600">akshatha.mohan@tamu.edu</a>
-                              </p>
-                              <p class="text-sm text-gray-500">
-                                Phone: <a href="tel:+13322518896" class="text-blue-600">(+1) 332-251-8896</a>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                        <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal()">
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Modify the Contact button in your main content -->
-                <a href="#" onclick="openModal()" class="bg-gradient-to-r from-blue-700 to-sky-600 text-white px-6 py-2 rounded-full hover:from-sky-600 hover:to-blue-700 transition duration-300">Contact</a>
-                
-                <!-- Add this script just before the closing </body> tag -->
-                <script>
-                  function openModal() {
-                    document.getElementById('contactModal').classList.remove('hidden');
-                  }
-                
-                  function closeModal() {
-                    document.getElementById('contactModal').classList.add('hidden');
-                  }
-                
-                  // Close the modal if the user clicks outside of it
-                  window.onclick = function(event) {
-                    var modal = document.getElementById('contactModal');
-                    if (event.target == modal) {
-                      closeModal();
-                    }
-                  }
-                </script>
-            </div>
-            <!-- Add this modal HTML just before the closing </body> tag -->
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="kicker"><i class="fa-solid fa-heart-pulse"></i> Medical AI Impact</div>
+        <h1 class="page-title">Translating Computational Imaging Research into Real Clinical AI Value</h1>
+        <p class="lead">
+          I am a Graduate Research Assistant at Washington University in St. Louis (WashU Medicine), currently working in MIR's Computational Imaging Research Center (CIRC), Medical AI Lab led by
+          <a href="https://www.mir.wustl.edu/employees/shinjini-kundu/" target="_blank" rel="noreferrer"><strong>Dr. Shinjini Kundu, MD, PhD</strong></a>.
+          My current research emphasis is medical imaging AI, with prior contributions in explainable AI, texture analysis, and computer vision systems.
+        </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card p-6">
-                    <h3 class="text-2xl font-semibold mb-2">Research Focus</h3>
-                    <p>I primarily focus on medical imaging AI, especially computer vision and machine learning methods for radiology and quantitative biomedical image analysis.</p>
-                </div>
-                <div class="card p-6">
-                    <h3 class="text-2xl font-semibold mb-2">Current Work</h3>
-                    <p>I currently work in MIR's Computational Imaging Research Center (CIRC) in the Medical AI Lab led by <a href="https://www.mir.wustl.edu/employees/shinjini-kundu/" class="advisor-link">Dr. Shinjini Kundu, MD, PhD</a>, where multidisciplinary teams bridge AI, imaging science, and medicine.</p>
-                </div>
-                <div class="card p-6">
-                    <h3 class="text-2xl font-semibold mb-2">Medical AI Direction</h3>
-                    <p>Aligned with CIRC and the Medical AI Lab direction, I work on rigorous data-driven methods to detect hidden disease patterns from imaging data and support clinically meaningful translational research.</p>
-                </div>
-            </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="Akshatha_Mohan_PhD_applicant.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i> CV</a>
+          <a class="btn btn-secondary" href="mailto:akshatha.mohan@tamu.edu"><i class="fa-regular fa-envelope"></i> Contact</a>
         </div>
-    </main>
 
-    <footer class="py-4 text-center text-gray-500">
-        <p>&copy; 2024 Akshatha Mohan. All rights reserved.</p>
-    </footer>
+        <div class="socials" aria-label="social links">
+          <a href="https://scholar.google.com/citations?hl=en&user=GF29N0wAAAAJ" target="_blank" rel="noreferrer" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+          <a href="https://www.linkedin.com/in/akshatha-mohan-495972188/" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Akshatha-Mohan" target="_blank" rel="noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
 
-    <script>
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'scale(1.05)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'scale(1)';
-            });
-        });
-    </script>
+      <aside class="avatar-card">
+        <img class="avatar" src="images/avatar.jpg" alt="Akshatha Mohan" />
+        <p class="caption">M.S. in Computer Engineering, Texas A&amp;M University. Focused on building robust, interpretable machine learning systems for biomedical imaging.</p>
+      </aside>
+    </section>
+
+    <section class="main-block">
+      <h2 class="section-title">Impact At A Glance</h2>
+      <div class="grid grid-4">
+        <article class="card">
+          <span class="badge">Research Outputs</span>
+          <h4>5 Publications</h4>
+          <p>Peer-reviewed work across CVPRW, IGARSS, ICMLA, SPIE, and IEEE AISP.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Medical Focus</span>
+          <h4>Computational Imaging AI</h4>
+          <p>Current research aligns with medical AI for imaging biomarkers and precision diagnostics.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Systems Impact</span>
+          <h4>LLM + RAG Applications</h4>
+          <p>Built deployed question-answering systems for medical and document intelligence workflows.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Technical Breadth</span>
+          <h4>Vision to Security</h4>
+          <p>Background spans medical vision, explainability, object detection, and Android security engineering.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="main-block">
+      <h2 class="section-title">What I Work On</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h4>Medical Image Intelligence</h4>
+          <p>Building ML methods for extracting clinically relevant patterns from complex imaging data.</p>
+        </article>
+        <article class="card">
+          <h4>Texture and Representation Learning</h4>
+          <p>Developing texture-aware methods that improve robustness and interpretability of image classifiers.</p>
+        </article>
+        <article class="card">
+          <h4>Trustworthy AI and Translation</h4>
+          <p>Combining explainability with rigorous evaluation to support practical, translational adoption.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="main-block">
+      <h2 class="section-title">Explore More</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h4><a href="experience.html">Experience</a></h4>
+          <p>Detailed timeline of research, engineering, and internship roles.</p>
+        </article>
+        <article class="card">
+          <h4><a href="projects.html">Projects</a></h4>
+          <p>Selected technical projects spanning LLM systems, imaging, and computer vision.</p>
+        </article>
+        <article class="card">
+          <h4><a href="publications.html">Publications</a></h4>
+          <p>Papers and conference contributions across medical and computer vision domains.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; 2026 Akshatha Mohan</div>
+  </footer>
 </body>
 </html>
