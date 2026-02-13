@@ -11,65 +11,88 @@
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
+  <header class="site-header">
+    <div class="container site-header-inner">
       <div class="brand">Akshatha Mohan</div>
       <nav class="menu">
         <a href="index.html">Home</a>
+        <a class="active" href="publications.html">Publications</a>
         <a href="projects.html">Projects</a>
         <a href="experience.html">Experience</a>
-        <a class="active" href="publications.html">Publications</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="main-block" style="padding-top: 2rem;">
-      <div class="kicker"><i class="fa-solid fa-book-open"></i> Research Record</div>
-      <h1 class="page-title" style="margin-top: 0.7rem;">Publications and Conference Contributions</h1>
-      <p class="lead">Selected papers across medical imaging, explainable AI, texture analysis, and vision applications.</p>
-    </section>
+  <main class="container layout">
+    <aside class="author-card">
+      <img class="avatar" src="images/avatar.jpg" alt="Akshatha Mohan profile photo" />
+      <h1 class="author-name">Akshatha Mohan</h1>
+      <p class="author-role">Publication Highlights</p>
+      <p class="author-meta"><a href="https://scholar.google.com/citations?hl=en&user=GF29N0wAAAAJ" target="_blank" rel="noreferrer">Google Scholar profile</a></p>
+    </aside>
 
-    <section class="main-block">
-      <div class="grid grid-2">
-        <article class="card">
-          <img class="paper-image" src="images/SPIE_lungcells.png" alt="Texture Analysis of Lung Cells" />
-          <span class="badge">SPIE 2024</span>
-          <h3>Texture Analysis of Lung Cell Morphology After Nanoparticle Exposure</h3>
-          <p><strong>A. Mohan</strong>, T. Jefferis, C. Sayes, J. Peeples</p>
-          <p style="margin-top: 0.7rem;">Medical-imaging-focused texture analysis for quantitative assessment of lung cell morphology changes.</p>
+    <section class="content">
+      <h2 class="page-title">Publications</h2>
+      <p class="lead">Selected papers in medical imaging AI, explainable AI, and texture-driven vision methods.</p>
+
+      <div class="section">
+        <article class="paper-box">
+          <div>
+            <span class="badge">Manuscript in Progress</span>
+            <img src="images/project-2.jpg" alt="Duke manuscript visual" />
+          </div>
+          <div>
+            <h3>Task-Driven Evaluation of Image Quality Metrics for Lung CT AI Workflows</h3>
+            <p class="paper-authors"><strong>A. Mohan</strong>, collaborators</p>
+            <p class="paper-meta">Comprehensive analysis of structural, perceptual, and statistical IQA behavior across NLST, VLST, and DLCS tasks.</p>
+          </div>
         </article>
 
-        <article class="card">
-          <img class="paper-image" src="images/lacunarity.png" alt="Lacunarity Pooling" />
-          <span class="badge">CVPRW 2024</span>
-          <h3>Lacunarity Pooling Layers for Plant Image Classification Using Texture Analysis</h3>
-          <p><strong>A. Mohan</strong>, J. Peeples</p>
-          <p style="margin-top: 0.7rem;"><a href="https://openaccess.thecvf.com/content/CVPR2024W/Vision4Ag/papers/Mohan_Lacunarity_Pooling_Layers_for_Plant_Image_Classification_using_Texture_Analysis_CVPRW_2024_paper.pdf" target="_blank" rel="noreferrer">Read Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <article class="paper-box">
+          <div>
+            <span class="badge">SPIE 2024</span>
+            <img src="images/SPIE_lungcells.png" alt="SPIE lung cells paper" />
+          </div>
+          <div>
+            <h3>Texture Analysis of Lung Cell Morphology After Nanoparticle Exposure</h3>
+            <p class="paper-authors"><strong>A. Mohan</strong>, T. Jefferis, C. Sayes, J. Peeples</p>
+          </div>
         </article>
 
-        <article class="card">
-          <img class="paper-image" src="images/STN.png" alt="STN YOLO" />
-          <span class="badge">ICMLA 2024</span>
-          <h3>Spatial Transformer Network YOLO Model for Agricultural Object Detection</h3>
-          <p>Y. Zambre, E. Rajkitkul, <strong>A. Mohan</strong>, J. Peeples</p>
-          <p style="margin-top: 0.7rem;"><a href="https://arxiv.org/abs/2407.21652" target="_blank" rel="noreferrer">Read Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <article class="paper-box">
+          <div>
+            <span class="badge">CVPRW 2024</span>
+            <img src="images/lacunarity.png" alt="CVPRW paper" />
+          </div>
+          <div>
+            <h3>Lacunarity Pooling Layers for Plant Image Classification Using Texture Analysis</h3>
+            <p class="paper-authors"><strong>A. Mohan</strong>, J. Peeples</p>
+            <p class="paper-meta"><a href="https://openaccess.thecvf.com/content/CVPR2024W/Vision4Ag/papers/Mohan_Lacunarity_Pooling_Layers_for_Plant_Image_Classification_using_Texture_Analysis_CVPRW_2024_paper.pdf" target="_blank" rel="noreferrer">Paper link</a></p>
+          </div>
         </article>
 
-        <article class="card">
-          <img class="paper-image" src="images/xai.png" alt="XAI Methods" />
-          <span class="badge">IGARSS 2023</span>
-          <h3>Quantitative Analysis of Primary Attribution Explainable AI Methods for Remote Sensing Image Classification</h3>
-          <p><strong>A. Mohan</strong>, J. Peeples</p>
-          <p style="margin-top: 0.7rem;"><a href="https://arxiv.org/abs/2306.04037" target="_blank" rel="noreferrer">Read Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <article class="paper-box">
+          <div>
+            <span class="badge">ICMLA 2024</span>
+            <img src="images/STN.png" alt="ICMLA paper" />
+          </div>
+          <div>
+            <h3>Spatial Transformer Network YOLO Model for Agricultural Object Detection</h3>
+            <p class="paper-authors">Y. Zambre, E. Rajkitkul, <strong>A. Mohan</strong>, J. Peeples</p>
+            <p class="paper-meta"><a href="https://arxiv.org/abs/2407.21652" target="_blank" rel="noreferrer">Paper link</a></p>
+          </div>
         </article>
 
-        <article class="card">
-          <img class="paper-image" src="images/netlist.png" alt="Netlist Generation" />
-          <span class="badge">IEEE AISP 2022</span>
-          <h3>Generation of Netlist from a Hand Drawn Circuit Through Image Processing and Machine Learning</h3>
-          <p><strong>Akshatha Mohan</strong>, A. Mohan, B. Indushree, M. Malavikaa, C. P. Narendra</p>
-          <p style="margin-top: 0.7rem;"><a href="https://ieeexplore.ieee.org/abstract/document/9760577" target="_blank" rel="noreferrer">Read Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        <article class="paper-box">
+          <div>
+            <span class="badge">IGARSS 2023</span>
+            <img src="images/xai.png" alt="IGARSS paper" />
+          </div>
+          <div>
+            <h3>Quantitative Analysis of Primary Attribution Explainable AI Methods for Remote Sensing Image Classification</h3>
+            <p class="paper-authors"><strong>A. Mohan</strong>, J. Peeples</p>
+            <p class="paper-meta"><a href="https://arxiv.org/abs/2306.04037" target="_blank" rel="noreferrer">Paper link</a></p>
+          </div>
         </article>
       </div>
     </section>
