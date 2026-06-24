@@ -1,0 +1,156 @@
+cv:
+  name: Akshatha Mohan
+  label: PhD Student in Imaging Science
+  email: mohan.a@wustl.edu
+  location: St. Louis, MO
+  image: ""
+  summary: PhD student in Imaging Science at Washington University in St. Louis, working at the intersection of imaging science and machine learning for medical and scientific imaging.
+
+  social_networks:
+    - network: GitHub
+      username: Akshatha-Mohan
+    - network: LinkedIn
+      username: akshatha-mohan-495972188
+
+  sections:
+    Education:
+      - institution: Washington University in St. Louis
+        location: St. Louis, MO, US
+        url: https://wustl.edu/
+        area: Imaging Science
+        studyType: PhD
+        start_date: 2025-08
+        end_date: Present
+
+      - institution: Texas A&M University
+        location: College Station, TX, US
+        url: https://www.tamu.edu/
+        area: Electrical and Computer Engineering
+        studyType: M.S.
+        start_date: 2022
+        end_date: 2024
+        score: "GPA 3.9/4.0"
+        courses: "Pattern Recognition, Machine Learning, Digital Image Processing, Computational Photography, Parallel Computing, Analysis of Algorithms"
+
+      - institution: Bangalore Institute of Technology
+        location: Bangalore, India
+        area: Electronics and Communication
+        studyType: B.E.
+        start_date: 2017
+        end_date: 2021
+        score: "GPA 9.15/10"
+
+    Experience:
+      - company: Duke University (Virtual Imaging Trials)
+        position: Research Collaborator
+        location: Durham, NC, US
+        start_date: 2025-02
+        end_date: 2025-05
+        summary: "Supervisor: Prof. Joseph Y. Lo"
+        highlights:
+          - Analyzed clinical and simulated CT images to study false positives in AI-based lung cancer detection.
+
+      - company: Advanced Vision and Learning Lab, Texas A&M University
+        position: Machine Learning Research Assistant
+        location: College Station, TX, US
+        start_date: 2023-01
+        end_date: 2024-12
+        summary: "Supervisor: Dr. Joshua Peeples"
+        highlights:
+          - Developed lacunarity pooling layers for texture-aware image classification (CVPRW 2024, M.S. thesis).
+          - Studied texture analysis of lung cell morphology after nanoparticle exposure (SPIE 2025).
+          - Built a PyTorch/Captum framework evaluating XAI methods for remote sensing (IGARSS 2023).
+
+      - company: Texas A&M University, Department of ECE
+        position: Graduate Teaching Assistant (ECEN 214)
+        location: College Station, TX, US
+        start_date: 2023-08
+        end_date: 2024-05
+        highlights:
+          - Led circuit theory lab sections for 70+ undergraduates across three sections per semester.
+
+      - company: Ittiam Systems Pvt. Ltd.
+        position: Android Security Software Engineer
+        location: Bangalore, India
+        start_date: 2021-08
+        end_date: 2022-07
+        highlights:
+          - Developed software fuzzers for AOSP (Linux kernel, UI automation), reaching 80%+ code coverage.
+          - Engineered C++ for LLVM and Syzkaller backends to improve platform security.
+
+      - company: Indian Institute of Science (IISc)
+        position: Video Processing Research Intern
+        location: Bangalore, India
+        start_date: 2021-05
+        end_date: 2021-08
+        highlights:
+          - Built a real-time H.264/AVC streaming system over WiFi with end-to-end latency under 3 ms for 90% of packets.
+
+      - company: EngineCAL Pvt. Ltd.
+        position: Computer Vision Research Intern
+        location: Bangalore, India
+        start_date: 2020-06
+        end_date: 2020-09
+        highlights:
+          - Deployed MobileNet-SSD v2 driver-assistance detection on edge devices (Raspberry Pi, Jetson Nano), 72.7% mAP.
+
+    Publications:
+      - title: Texture analysis of lung cell surface morphology after nanoparticle exposure
+        authors:
+          - A. Mohan
+          - T. Jefferis
+          - C. M. Sayes
+          - J. Peeples
+        publisher: "SPIE Medical Imaging 2025: Digital and Computational Pathology"
+        releaseDate: 2025
+
+      - title: Lacunarity pooling layers for plant image classification using texture analysis
+        authors:
+          - A. Mohan
+          - J. Peeples
+        publisher: IEEE/CVF CVPR Workshops
+        releaseDate: 2024
+        url: https://openaccess.thecvf.com/content/CVPR2024W/Vision4Ag/papers/Mohan_Lacunarity_Pooling_Layers_for_Plant_Image_Classification_using_Texture_Analysis_CVPRW_2024_paper.pdf
+
+      - title: Spatial transformer network YOLO model for agricultural object detection
+        authors:
+          - Y. Zambre
+          - E. Rajkitkul
+          - A. Mohan
+          - J. Peeples
+        publisher: arXiv:2407.21652
+        releaseDate: 2024
+        url: https://arxiv.org/abs/2407.21652
+
+      - title: Quantitative analysis of primary attribution explainable AI methods for remote sensing image classification
+        authors:
+          - A. Mohan
+          - J. Peeples
+        publisher: IGARSS 2023, IEEE
+        releaseDate: 2023
+        url: https://arxiv.org/abs/2306.04037
+
+      - title: Generation of netlist from a hand drawn circuit through image processing and machine learning
+        authors:
+          - A. Mohan
+          - et al.
+        publisher: IEEE AISP 2022
+        releaseDate: 2022
+
+    Skills:
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "C, C++, Python, R, SQL, CUDA, Linux, Unix"
+
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, TensorFlow, scikit-learn, pandas, NumPy, LangChain, PowerBI, Tableau"
+
+      - name: Cloud
+        icon: fa-solid fa-cloud
+        keywords: "AWS SageMaker, AWS Bedrock, AWS S3, AWS EC2, AWS Athena, Azure Data Factory"
+
+    Interests:
+      - name: Research Interests
+        icon: fa-solid fa-tag
+        keywords: "Imaging Science, Medical Imaging, Multimodal Imaging, Texture Analysis, Explainable AI, Computer Vision"

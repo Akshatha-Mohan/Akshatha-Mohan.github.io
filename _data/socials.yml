@@ -1,0 +1,7 @@
+# Social media links and usernames, displayed in the order defined here.
+# See https://github.com/george-gca/jekyll-socials for supported keys.
+cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
+email: mohan.a@wustl.edu # your email address
+scholar_userid: GF29N0wAAAAJ # your Google Scholar ID
+github_username: Akshatha-Mohan # your GitHub username
+linkedin_username: akshatha-mohan-495972188 # your LinkedIn username
